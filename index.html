@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jeopardy!</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/jquery" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.js" defer></script>
+    <script src="https://unpkg.com/lodash" defer></script>
+    <script src="jeopardy.js" defer></script>
+  </head>
+  <body>
+    <h1>Jeopardy!</h1>
+
+    <button id="play">Start the Game!</button>
+
+    <section>
+      <table>
+        <thead class="hidden">
+          <tr id="categories">
+            <!-- Category headers go here -->
+          </tr>
+        </thead>
+        <tbody id="clues">
+          <!-- Clue rows go here -->
+        </tbody>
+      </table>
+
+      <div id="active-clue">
+        <!-- Active question/answer will be shown here -->
+      </div>
+    </section>
+
+    <div id="spinner" class="disabled">
+      <i class="fa fa-spin fa-spinner"></i>
+    </div>
+  </body>
+</html>
